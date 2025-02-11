@@ -20,10 +20,8 @@ DB_PORT = os.getenv('DB_PORT')
 DB_NAME = os.getenv('DB_NAME')
 
 # SSL証明書のパス（DigiCert のルート証明書）
-# SSL_CA_PATH = "C:/Users/nomur/DigiCertGlobalRootCA.crt"  # 証明書のパスを指定
-
-# SSL証明書のパス
-SSL_CA_PATH = str(base_path / 'DigiCertGlobalRootCA.crt.pem')
+SSL_CA_PATH = str(base_path / 'DigiCertGlobalRootCA.crt')  # 証明書のパスを指定
+# SSL_CA_PATH = "C:/Users/nomur/POSApp_Nomurin/backend/DigiCertGlobalRootCA.crt"
 
 # SSL証明書の取得
 # SSL_CA_CERT = os.getenv("SSL_CA_CERT")
