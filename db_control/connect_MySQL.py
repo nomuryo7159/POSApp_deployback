@@ -6,10 +6,10 @@ from pathlib import Path
 import tempfile
 
 # 環境変数の読み込み
-base_path = Path(__file__).parents[1]
-env_path = base_path / '.env'
-load_dotenv(dotenv_path=env_path)
-# load_dotenv()
+# base_path = Path(__file__).parents[1]
+# env_path = base_path / '.env'
+# load_dotenv(dotenv_path=env_path)
+load_dotenv()
 
 # データベース接続情報
 DB_USER = os.getenv('DB_USER')
